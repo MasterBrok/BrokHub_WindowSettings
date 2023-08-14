@@ -1,0 +1,26 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+    <DrawingImage x:Key="PhoneSystem">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <DrawingGroup >
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Brush="#FF00BAD3" Pen="{x:Null}">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero" Figures="M21,2L17,2C17,2.552,16.552,3,16,3L14,3C13.448,3,13,2.552,13,2L9,2C7.895,2,7,2.895,7,4L7,26C7,27.105,7.895,28,9,28L21,28C22.105,28,23,27.105,23,26L23,4C23,2.895,22.105,2,21,2z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup.Children>
+                        <DrawingGroup.ClipGeometry>
+                            <RectangleGeometry Rect="0,0,30,30" />
+                        </DrawingGroup.ClipGeometry>
+                    </DrawingGroup>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+</ResourceDictionary>

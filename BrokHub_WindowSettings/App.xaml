@@ -1,0 +1,34 @@
+﻿<Application x:Class="BrokHub_WindowSettings.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BrokHub_WindowSettings"
+             StartupUri="Windows\wSetting.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+
+
+                <!--Resources-->
+                <ResourceDictionary Source="Resources\Colors.xaml"/>
+                <ResourceDictionary Source="Resources\Fonts.xaml"/>
+
+                <!--Icons-->
+                <ResourceDictionary Source="SvgIcons\Account.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Apps.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Cortana.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Devices.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Laptop.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Search.xaml"/>
+                <ResourceDictionary Source="SvgIcons\TimeAndLanguage.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Privacy.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Updates.xaml"/>
+                <ResourceDictionary Source="SvgIcons\Gameing.xaml"/>
+
+                <!--Animcation-->
+                <ResourceDictionary Source="Animations\ButtonAnimations.xaml"/>
+                <ResourceDictionary Source="Animations\StringsAnimations.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

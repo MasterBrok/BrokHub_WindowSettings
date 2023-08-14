@@ -1,0 +1,26 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+    <DrawingImage x:Key="Devices">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <DrawingGroup >
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Brush="#FF00BAD3" Pen="{x:Null}">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero" Figures="M14,29C12.3,29,11,30.3,11,32L11,115 7,115C3.7,115 1,117.7 1,121 1,124.3 3.7,127 7,127L66,127C67.7,127 69,125.7 69,124 69,122.3 67.7,121 66,121L59,121 59,118C59,116.3,57.7,115,56,115L17,115 17,35 114,35C115.7,35 117,33.7 117,32 117,30.3 115.7,29 114,29L14,29z M84,41C76.8,41,71,46.8,71,54L71,114C71,121.2,76.8,127,84,127L114,127C121.2,127,127,121.2,127,114L127,54C127,46.8,121.2,41,114,41L84,41z M84,47L114,47C117.9,47,121,50.1,121,54L121,114C121,117.9,117.9,121,114,121L84,121C80.1,121,77,117.9,77,114L77,54C77,50.1,80.1,47,84,47z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup.Children>
+                        <DrawingGroup.ClipGeometry>
+                            <RectangleGeometry Rect="0,0,128,128" />
+                        </DrawingGroup.ClipGeometry>
+                    </DrawingGroup>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+</ResourceDictionary>

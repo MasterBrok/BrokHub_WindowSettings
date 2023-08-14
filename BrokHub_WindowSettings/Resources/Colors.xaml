@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="bgWindwo" Color="#D7DADF"/>
+    <SolidColorBrush x:Key="bgHoverWindwo" Color="#BCC2CB"/>
+    <SolidColorBrush x:Key="fgWindwoSearch" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="fgWindwoTitle" Color="#3C3F3F"/>
+
+</ResourceDictionary>

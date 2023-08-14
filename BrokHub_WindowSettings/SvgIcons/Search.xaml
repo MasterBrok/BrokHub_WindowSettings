@@ -1,0 +1,26 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+    <DrawingImage x:Key="Search">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <DrawingGroup >
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Brush="#FF00BAD3" Pen="{x:Null}">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero" Figures="M4,4C2.9,4,2,4.9,2,6L2,18C2,19.1,2.9,20,4,20L11.294922,20C11.105922,19.366 11,18.695 11,18 11,14.134 14.134,11 18,11 19.488,11 20.866,11.467766 22,12.259766L22,8C22,6.9,21.1,6,20,6L12,6 10,4 4,4z M18,13C15.2,13 13,15.2 13,18 13,20.8 15.2,23 18,23 19,23 20.000781,22.699219 20.800781,22.199219L22.599609,24 24,22.599609 22.199219,20.800781C22.699219,20.000781 23,19 23,18 23,15.2 20.8,13 18,13z M18,15C19.7,15 21,16.3 21,18 21,19.7 19.7,21 18,21 16.3,21 15,19.7 15,18 15,16.3 16.3,15 18,15z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup.Children>
+                        <DrawingGroup.ClipGeometry>
+                            <RectangleGeometry Rect="0,0,24,24" />
+                        </DrawingGroup.ClipGeometry>
+                    </DrawingGroup>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+</ResourceDictionary>

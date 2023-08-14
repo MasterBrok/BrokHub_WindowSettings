@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Storyboard x:Key="IsClickAnimation">
+        <ColorAnimationUsingKeyFrames  Storyboard.TargetProperty="(Background).(SolidColorBrush.Color)" >
+            <EasingColorKeyFrame
+                Value="#FFFFFF" KeyTime="0:0:0.5"
+                >
+                <EasingColorKeyFrame.EasingFunction>
+                    <CircleEase EasingMode="EaseIn" />
+                </EasingColorKeyFrame.EasingFunction>
+            </EasingColorKeyFrame>
+
+            <EasingColorKeyFrame
+                Value="#D7DADF" KeyTime="0:0:1"
+                >
+                <EasingColorKeyFrame.EasingFunction>
+                    <CircleEase EasingMode="EaseOut" />
+                </EasingColorKeyFrame.EasingFunction>
+            </EasingColorKeyFrame>
+
+        </ColorAnimationUsingKeyFrames>
+    </Storyboard>
+
+</ResourceDictionary>

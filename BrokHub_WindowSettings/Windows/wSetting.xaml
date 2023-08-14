@@ -1,0 +1,82 @@
+﻿<Window x:Class="BrokHub_WindowSettings.Windows.wSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrokHub_WindowSettings.Windows"
+        xmlns:sys="clr-namespace:BrokHub_WindowSettings.Controls"
+        xmlns:cmd="clr-namespace:BrokHub_WindowSettings.BrokHub.Commands"
+        xmlns:viewMoedls="clr-namespace:BrokHub_WindowSettings.BrokHub.ViewModels"
+        mc:Ignorable="d"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Height="650"
+        Width="950"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
+        >
+
+    <Window.Resources>
+        <Style TargetType="Label" x:Key="StyleLabel">
+            <Setter Property="FontWeight" Value="Heavy"/>
+            <Setter Property="FontFamily" Value="{DynamicResource Font1}"/>
+            <Setter Property="FontSize" Value="26"/>
+        </Style>
+
+    </Window.Resources>
+    <Border CornerRadius="20"
+            Background="{StaticResource bgWindwo}"
+            >
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="574"/>
+            </Grid.RowDefinitions>
+
+            <Grid
+                VerticalAlignment="Top"
+                Margin="20"
+                >
+                <Label
+                    Style="{StaticResource StyleLabel}"
+                    >
+                    <Label.Triggers>
+                        <EventTrigger RoutedEvent="Loaded">
+                            <BeginStoryboard Storyboard="{StaticResource TitleAnimation}"/>
+                        </EventTrigger>
+                    </Label.Triggers>
+                </Label>
+                <sys:ccTextBox
+                    HorizontalAlignment="Center"
+                    Text="Brok"
+                    />
+            </Grid>
+
+
+            <WrapPanel Grid.Row="1"
+                       Margin="4"
+                       Width="800"
+                       x:Name="buttons"
+                       >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Loaded">
+                        <i:InvokeCommandAction
+                            CommandParameter="{Binding ElementName=buttons}"
+                            Command="{Binding AddChildren}"
+                            />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <WrapPanel.DataContext>
+                    <viewMoedls:SettingViewModel/>
+                </WrapPanel.DataContext>
+
+            </WrapPanel>
+
+
+
+
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,118 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BrokHub_WindowSettings.Controls"
+    xmlns:models="clr-namespace:BrokHub_WindowSettings.BrokHub.Models"
+    >
+
+
+    <Style TargetType="{x:Type local:ccButton}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Width" Value="220"/>
+        <Setter Property="Height" Value="60"/>
+        <Setter Property="Margin" Value="20 25 20 25"/>
+        <Setter Property="DataContext" Value="{x:Type models:Item}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ccButton}">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                        <Grid >
+                            <Grid.Resources>
+                                <Style TargetType="TextBlock" x:Key="Titel">
+                                    <Setter Property="FontFamily" Value="{DynamicResource Font2}"
+                                            />
+                                    <Setter Property="FontSize" Value="18"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+
+                                </Style>
+                                <Style TargetType="TextBlock" x:Key="SubTitel">
+                                    <Setter Property="FontFamily"
+                                            Value="{DynamicResource Font2}"
+                                            />
+                                    <Setter Property="FontSize" Value="13"/>
+                                    <Setter Property="FontWeight" Value="Regular"/>
+                                    <Setter Property="Foreground" Value="Gray"/>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <!--Icon-->
+                                <ColumnDefinition Width="1.5*"/>
+                                <!--Content-->
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Margin="5">
+                                <Grid.Background>
+                                    <!--Image-->
+                                    <ImageBrush Stretch="Uniform" ImageSource="{Binding Source}"/>
+                                </Grid.Background>
+                            </Grid>
+                            <StackPanel Margin="10 5 0 5"
+                                        Grid.Column="1"
+                                        VerticalAlignment="Center" >
+                                <!--Title-->
+                                <TextBlock Text="{Binding Title}" Style="{DynamicResource Titel}"/>
+                                <StackPanel Orientation="Horizontal"
+                                            VerticalAlignment="Bottom">
+                                    <!--Sub 1-->
+                                    <TextBlock Text="{Binding SubContent[0]}" Style="{DynamicResource SubTitel}"/>
+                                    <!--Sub 2-->
+                                    <TextBlock Text="{Binding SubContent[1]}" Style="{DynamicResource SubTitel}"/>
+                                    <!--Sub 3-->
+                                    <TextBlock Text="{Binding SubContent[2]}" Style="{DynamicResource SubTitel}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource bgHoverWindwo}"/>
+                            <Setter Property="Opacity" Value="0.7"/>
+                        </Trigger>
+                        <EventTrigger RoutedEvent="Click">
+                            <BeginStoryboard
+                                x:Name="bgIsClick"
+                                Storyboard="{DynamicResource IsClickAnimation}"/>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style TargetType="{x:Type local:ccTextBox}">
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Padding" Value="3 0 3 0"/>
+        <Setter Property="Margin" Value="3"/>
+        <Setter Property="Background" Value="{DynamicResource fgWindwoTitle}"/>
+        <Setter Property="Foreground" Value="{DynamicResource fgWindwoSearch}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource Font1}"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ccTextBox}">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{DynamicResource bgHoverWindwo}"
+                        CornerRadius="10"
+                        >
+                        <ScrollViewer
+                            x:Name="PART_ContentHost"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                            HorizontalScrollBarVisibility="Hidden"
+                            VerticalScrollBarVisibility="Hidden"
+                            />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+</ResourceDictionary>

@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard x:Key="TitleAnimation">
+        <StringAnimationUsingKeyFrames Storyboard.TargetProperty="Content"
+                                       AutoReverse="True"
+                                       RepeatBehavior="Forever">
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.3"  Value ="B" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.6"  Value ="Br" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.9"  Value ="Bro" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.2"  Value ="Brok" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.5"  Value ="BrokH" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.8"  Value ="BrokHu" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.1"  Value ="BrokHub" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.4"  Value ="BrokHub." />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.7"  Value ="BrokHub. " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.0"  Value ="BrokHub. W" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.3"  Value ="BrokHub. Wi" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.6"  Value ="BrokHub. Win" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.9"  Value ="BrokHub. Wind" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.2"  Value ="BrokHub. Windo" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.5"  Value ="BrokHub. Window" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.8"  Value ="BrokHub. Window " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.1"  Value ="BrokHub. Window S" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.4"  Value ="BrokHub. Window Se" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.7"  Value ="BrokHub. Window Set" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.0"  Value ="BrokHub. Window Sett" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.3"  Value ="BrokHub. Window Setti" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.6"  Value ="BrokHub. Window Settin" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.9"  Value ="BrokHub. Window Setting" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.2"  Value ="BrokHub. Window Settings" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.2"  Value ="BrokHub. Window Settings" />
+        </StringAnimationUsingKeyFrames>
+    </Storyboard>
+</ResourceDictionary>

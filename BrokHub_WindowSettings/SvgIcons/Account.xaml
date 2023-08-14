@@ -1,0 +1,26 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+    <DrawingImage x:Key="Account" >
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <DrawingGroup >
+                        <DrawingGroup.Children>
+                            <GeometryDrawing  Brush="#FF00BAD3" Pen="{x:Null}">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry  FillRule="EvenOdd" Figures="M24,4C18.494917,4 14,8.494921 14,14 14,19.505079 18.494917,24 24,24 29.505083,24 34,19.505079 34,14 34,8.494921 29.505083,4 24,4z M12.5,28C10.032499,28,8,30.032499,8,32.5L8,33.699219C8,36.640082 9.8647133,39.277974 12.708984,41.091797 15.553256,42.90562 19.444841,44 24,44 28.555159,44 32.446744,42.90562 35.291016,41.091797 38.135287,39.277974 40,36.640082 40,33.699219L40,32.5C40,30.032499,37.967501,28,35.5,28L12.5,28z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup.Children>
+                        <DrawingGroup.ClipGeometry>
+                            <RectangleGeometry Rect="0,0,48,48" />
+                        </DrawingGroup.ClipGeometry>
+                    </DrawingGroup>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+</ResourceDictionary>
